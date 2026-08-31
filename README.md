@@ -11,11 +11,41 @@ Questa cartella contiene tutto ciò che serve per far aprire il cassetto Tera Mi
 
 ## Hardware usato
 
-- Cassetto portadenaro **Tera Mini** con connettore RJ12.
-- Trigger USB per cassetto con controller seriale **Prolific PL2303**.
+- Cassetto portadenaro **Tera Cash Drawer** con connettore RJ12.
+- Trigger USB **KX-007** per cassetto, con controller seriale **Prolific PL2303**.
 - Un Mac con una porta USB disponibile (o un normale adattatore USB-C/USB, se necessario).
 
 Il cassetto si collega al trigger tramite RJ12; il trigger si collega al Mac tramite USB. Non serve il vecchio relay DSD TECH.
+
+![Manuale del cassetto Tera Cash Drawer](images/tera-cash-drawer-manual.jpg)
+
+### Cassetto utilizzato
+
+| Caratteristica | Specifica verificata |
+|---|---|
+| Marca | Tera |
+| Famiglia | Cash Drawer |
+| Manuale | Ver. C01.1.03 |
+| Collegamento di apertura | RJ12 verso il trigger esterno |
+| Apertura | Impulso elettrico inviato dal trigger |
+| Utilizzo nel progetto | Contiene il Sigillo e si apre dopo la validazione del codice 125 |
+
+La foto del manuale non riporta un codice modello più specifico né le dimensioni del cassetto; per questo non vengono indicate misure non verificate.
+
+### Trigger USB utilizzato
+
+| Caratteristica | Specifica verificata |
+|---|---|
+| Modello | KX-007 |
+| Descrizione in etichetta | USB Trigger for Cash Drawer (Driver-Free) |
+| Ingresso | USB dal Mac |
+| Uscita | Collegamento del cassetto RJ12 |
+| Controller rilevato da macOS | Prolific PL2303 USB-Serial |
+| Porta seriale | `/dev/cu.PL2303G-USBtoUART*` |
+| Velocità usata | 9600 baud |
+| Comando usato dal progetto | Invio del byte `X` |
+
+La dicitura “Driver-Free” è quella stampata sul dispositivo. Su questo Mac è stato comunque necessario installare e abilitare il driver **PL2303 Serial** per far comparire la porta seriale.
 
 ## Prima preparazione su un altro Mac
 
