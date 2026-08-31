@@ -2,6 +2,12 @@
 
 Questa cartella contiene tutto ciò che serve per far aprire il cassetto Tera Mini quando nella pagina HEPscape! viene inserito il codice **125** e l'animazione arriva a **RUN STATUS: VALIDATED**.
 
+## Video dimostrativo
+
+[![Guarda il video dimostrativo di HEPscape! e del cassetto](demo/hepscape-cassetto-demo.jpg)](demo/hepscape-cassetto-demo.mp4)
+
+**[▶ Guarda il video dimostrativo](demo/hepscape-cassetto-demo.mp4)** — durata: circa 19 secondi.
+
 ## Contenuto
 
 - `hepscape_run_validation_v3.html`: la pagina HEPscape! completa.
