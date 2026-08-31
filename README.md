@@ -106,6 +106,24 @@ Se il cassetto si apre, trigger, driver e server funzionano correttamente.
 
 Non bisogna reinstallare nulla. Ricollega il trigger, fai doppio clic su `Avvia_HEPscape.command`, lascia aperto il Terminale e apri la pagina HTML.
 
+## Come spegnere e mettere via tutto
+
+1. Se è visibile la finestra del Terminale che esegue il server, premi `Control-C` oppure chiudila.
+2. Se non è visibile alcun Terminale, apri una nuova finestra del Terminale ed esegui:
+
+   ```bash
+   pkill -f relay_server.py
+   ```
+
+3. Scollega il trigger USB dal Mac.
+4. Il cavo RJ12 può rimanere collegato tra trigger e cassetto.
+5. Chiudi il cassetto e, se necessario, bloccalo con la chiave.
+6. Riponi insieme cassetto, trigger e cavi.
+
+Non serve disinstallare il driver PL2303. Un eventuale processo macOS chiamato `ControlCenter` non appartiene a HEPscape e non deve essere chiuso.
+
+Per utilizzare nuovamente il sistema, collega il trigger USB, controlla il cavo RJ12, avvia `Avvia_HEPscape.command` e apri la pagina HTML.
+
 ## Se non funziona
 
 - **Compare “Trigger USB non trovato”**: verifica che il trigger sia collegato, che l'estensione Prolific sia abilitata e prova a scollegarlo e ricollegarlo.
