@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local HTTP bridge for the HEPscape USB cash-drawer trigger."""
+"""Local HTTP bridge for the HEPscape! USB cash-drawer trigger."""
 
 import glob
 import json
@@ -78,7 +78,7 @@ class RelayRequestHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = ThreadingHTTPServer((HTTP_HOST, HTTP_PORT), RelayRequestHandler)
-    print(f"HEPscape drawer server: http://localhost:{HTTP_PORT}/open")
+    print(f"HEPscape! drawer server: http://localhost:{HTTP_PORT}/open")
     print(f"Trigger: {SERIAL_PORT_PATTERN} @ 9600 baud")
     try:
         server.serve_forever()
