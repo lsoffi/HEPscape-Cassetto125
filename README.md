@@ -1,10 +1,10 @@
 # HEPscape! — Cassetto 125
 
-Questa cartella contiene tutto ciò che serve per far aprire il cassetto Tera Mini quando nella pagina HEPscape viene inserito il codice **125** e l'animazione arriva a **RUN STATUS: VALIDATED**.
+Questa cartella contiene tutto ciò che serve per far aprire il cassetto Tera Mini quando nella pagina HEPscape! viene inserito il codice **125** e l'animazione arriva a **RUN STATUS: VALIDATED**.
 
 ## Contenuto
 
-- `hepscape_run_validation_v3.html`: la pagina HEPscape completa.
+- `hepscape_run_validation_v3.html`: la pagina HEPscape! completa.
 - `relay_server.py`: il piccolo server locale che comunica con il trigger USB.
 - `Avvia_HEPscape.command`: avvia il server con un doppio clic.
 - `requirements.txt`: conferma che non servono pacchetti Python aggiuntivi.
@@ -87,7 +87,7 @@ python3 relay_server.py
 Quando compare questo messaggio, il sistema è pronto:
 
 ```text
-HEPscape drawer server: http://localhost:5000/open
+HEPscape! drawer server: http://localhost:5000/open
 ```
 
 Per fermare il server premi `Control-C` oppure chiudi il Terminale.
@@ -120,7 +120,7 @@ Non bisogna reinstallare nulla. Ricollega il trigger, fai doppio clic su `Avvia_
 5. Chiudi il cassetto e, se necessario, bloccalo con la chiave.
 6. Riponi insieme cassetto, trigger e cavi.
 
-Non serve disinstallare il driver PL2303. Un eventuale processo macOS chiamato `ControlCenter` non appartiene a HEPscape e non deve essere chiuso.
+Non serve disinstallare il driver PL2303. Un eventuale processo macOS chiamato `ControlCenter` non appartiene a HEPscape! e non deve essere chiuso.
 
 Per utilizzare nuovamente il sistema, collega il trigger USB, controlla il cavo RJ12, avvia `Avvia_HEPscape.command` e apri la pagina HTML.
 
