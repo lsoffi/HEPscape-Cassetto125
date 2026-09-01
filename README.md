@@ -70,6 +70,12 @@ Il programma cerca automaticamente una porta con un nome simile a:
 
 Il numero finale può cambiare: non occorre modificare alcun file.
 
+## Installazione su Windows 7
+
+Per **Windows 7 Home Premium a 64 bit** è disponibile un pacchetto separato nella cartella [`windows`](windows/README_WINDOWS_7.md). Include il server compatibile con le porte COM e due file da avviare con doppio clic.
+
+Windows 7 richiede [Python 3.8.10 a 64 bit](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe); le versioni moderne di Python non sono compatibili con questo sistema.
+
 ## Avvio più facile
 
 1. Scarica il repository sul Mac e apri la cartella.
